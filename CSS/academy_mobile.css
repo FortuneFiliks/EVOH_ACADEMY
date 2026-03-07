@@ -173,7 +173,7 @@ aspect-ratio: 1 / 1;
 	   animation-duration : 1s;
 	   animation-timing-function : linear;
 	   animation-fill-mode : forwards;
-	   animation-delay : 1s;
+	   animation-delay : 0.9s;
 	}
 	
 	.animate_cap_heading{
