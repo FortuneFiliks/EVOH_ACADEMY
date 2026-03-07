@@ -1,0 +1,413 @@
+@media(min-width: 640px) and (hover: hover) and (pointer: fine){
+/****START*****/
+    *{
+        margin : 0;
+    	padding : 0;
+    }
+        
+    body{
+    	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    	overflow-x : hidden;
+    }
+	
+	
+/******************************FIRST SECTION******************************/	
+	.first_section{
+		width : 100%;
+		min-height : 100dvh;
+		min-height : 100vh;
+	    position : relative;
+     	color : #ffffff;   
+		background-color : #0b1c2d;
+	}	
+	
+	.first_section_content{
+		width : 95%;
+		height : 100%;
+		z-index : 1;
+		margin : 0 auto 0 auto;
+	}
+	
+	
+	.first_section_flex{
+		display : flex;
+		flex-direction : column;
+		width : 100%;
+		height : 100%;
+		justify-content : center;
+		gap : 12.5px;
+		z-index : 1;
+	    position : relative;
+	}
+	.first_section_flex_left_item{
+	    width : 100%;
+		padding-top : 50px;
+	}
+	
+	.first_section_flex_right_item{
+		width : 100%;
+	}
+	
+	.diamond_img_wrapper{
+	    width : 30%;
+        aspect-ratio: 1 / 1;		
+       height : auto;		
+    clip-path: polygon(
+      50% 0%,      /* Top point */
+      100% 50%,    /* Right point */
+      50% 100%,    /* Bottom point */
+      0% 50%       /* Left point */
+    );	
+    background : #c5a059;
+	display : flex;
+	align-items : center;
+	justify-content : center;
+	margin : 0;	
+	}
+	
+	.diamond_img{
+	    width : 95%;
+aspect-ratio: 1 / 1;		
+		height : auto;
+   clip-path: polygon(
+      50% 0%,   
+      100% 50%, 
+      50% 100%, 
+      0% 50%    
+    );			
+	
+	}
+	
+	.first_section_image_wrapper{
+		position : relative;
+	}
+			
+	.top_diamond_image{
+	    position : absolute;		
+		top : 0px;
+		left : 65%;
+	}
+	
+	.left_diamond_image{
+		position : absolute;
+		top : 0px;
+		left : 0px;
+	}
+	
+	.right_diamond_image{
+	    position : absolute;
+		top : 0px;
+		left : 27%;
+	    width : 40%;
+aspect-ratio: 1 / 1;		
+        height : auto;		
+	    
+	}
+	
+	.bottom_diamond_image{		
+		position : absolute;
+		top : 0;
+		left : 60%;
+        display : none;		
+	}
+	
+	.right_diamond{
+	    width : 95%;
+aspect-ratio: 1 / 1;		
+		height : auto;		
+	}
+	
+	
+	.first_section_heading{
+		font-weight : 700;
+		font-size : 3.5rem;
+		font-family : Playfair Display;
+		color : #D6E0F0;
+	    transform : scaleY(0);
+		transform-origin : bottom;		
+        text-align : center;		
+	}	
+	.cap_heading{
+		font-weight : 700;
+		font-size : 2.75rem;
+		font-family : Playfair Display;
+		color : #D6E0F0;
+	    transform : scaleY(0);
+		transform-origin : bottom;	
+        text-align : center;		
+	}
+	
+	.first_section_subheading{
+	    font-size : 1.15rem;
+		font-style : oblique;
+		text-align : justify;
+	}
+	
+	.cap_img{
+		position : absolute;
+		width : 50%;
+		height : auto;
+		opacity : 0.025;
+		top : -15%;
+		left : -15%;
+		mix-blend-mode : multiply;
+		display : none;
+	}
+	
+	
+/******************************	FIRST SECTION ANIMATION******************************/
+
+    @keyframes first_section_heading_animation{
+		from{
+			transform : scaleY(0);
+		}
+		to{
+			transform : scaleY(1);
+		}
+	}
+	
+	.animate_first_section_heading{
+	   animation-name : first_section_heading_animation;
+	   animation-duration : 1.5s;
+	   animation-timing-function : linear;
+	   animation-fill-mode : forwards;
+	   animation-delay : 1.1s;
+	}
+	
+	.animate_cap_heading{
+	   animation-name : first_section_heading_animation;
+	   animation-duration : 1s;
+	   animation-timing-function : linear;
+	   animation-fill-mode : forwards;
+	}
+
+	
+	
+/******************************THIRD SECTION******************************/
+    .third_section{
+		width : 100%;
+		min-height : auto;
+		min-height : auto;
+		background-color : #F9F6EF;
+		padding : 6rem 0 6rem 0;
+		color : #183153;
+	}
+
+    .third_section_content{
+		width : 90%;
+		margin : 0 auto 0 auto;
+		font-size : 1.15rem;
+	}
+	
+	.third_section_flex{
+		display : flex;
+		flex-direction : column;
+		gap : 15px;
+		align-items : center;
+		justify-content : center;
+		margin : 0 0 30px 0;
+    	overflow-x : hidden;		
+	}
+	
+	.third_section_flex_item{
+		margin :0;	
+        transform : translateX(40px);		
+	}
+	
+	.third_section_flex_item>p{
+	    text-align : justify;
+	}
+	
+	.third_section_heading{
+		font-weight : 600;
+		font-size : 2rem;
+		font-family : calibre,helvetica,arial,sans-serif;
+        padding : 0 0 15px 0;	
+        text-align : center;		
+	}
+
+	.research_section_heading{
+		font-weight : 600;
+		font-size : 1.5rem;
+		font-family : calibre,helvetica,arial,sans-serif;
+        padding : 0 0 15px 0;
+        text-align : center;		
+	}	
+	
+	
+	.teaching_img{
+		width : 450px;
+		height : 450px;
+		border-radius : 15px;
+	    display : block;
+        flex-shrink: 0;
+       transform : translateX(-40px);		
+	}
+	
+	.approach_icon{
+		width : 30px;
+		height : 30px;
+	}
+	
+	.approach_list, .engagement_list{
+		list-style-type : none;
+	}
+	
+	.approach_list>li{
+		padding : 5px 0 5px 0;
+		font-size : 1.15rem;
+	}
+	
+	.engagement_sublist{          
+	    padding : 0 0 0 30px;
+	}
+	
+/******************************THIRD SECTION ANIMATION******************************/
+
+    @keyframes teaching_img_animation{
+		from{
+            transform : translateX(-40px);			
+		}
+		to{
+            transform : translateX(0);			
+		}
+	}
+
+
+    .animate_teaching_img{
+		animation-name : teaching_img_animation;
+		animation-duration : 2s;
+		animation-fill-mode : forwards;
+		animation-timing-function : linear;
+	}
+	
+	
+    @keyframes third_section_flex_item_animation{
+		from{
+            transform : translateX(40px);			
+		}
+		to{
+            transform : translateX(0);			
+		}
+	}
+
+
+    .animate_third_section_flex_item{
+		animation-name : third_section_flex_item_animation;
+		animation-duration : 2s;
+		animation-fill-mode : forwards;
+		animation-timing-function : linear;
+	}	
+	
+
+/******************************SECOND SECTION******************************/	
+	.second_section{
+		width : 100%;
+		min-height : auto;
+		min-height : auto;
+		background-image : url("../IMAGES/rashid-tajuar-g0nVEyiDBAI-unsplash.webp");
+		background-size : cover;
+		
+	}	
+	
+	.second_section_content{
+		width : 100%;
+		height  : 100%;
+		padding : 6rem 0 6rem 0;
+		background-color : #000000F2;
+	}
+	
+	.second_section_heading{
+		color : #ffffff;
+		font-weight : 600;
+		font-size : 1.75rem;
+		font-family : calibre,helvetica,arial,sans-serif;
+		padding : 0 0 0 25px;
+		text-align : left;		
+	}
+	
+	.second_section_flex{
+		width : 95%;
+		display : flex;
+		flex-direction : column;
+		gap : 50px;
+		margin : 50px auto 0 auto;
+	}
+	
+	.second_section_flex>div{
+		flex : 1;
+		height : 300px;
+		color : #183153;
+		padding : 20px 10px 10px 20px;
+		font-size : 1.12rem;
+        border : double 3px #FFFFFF;
+		color : #ffffff;
+        border-top-left-radius: 30px;		
+        border-bottom-right-radius: 30px;		
+        corner-shape: bevel;		
+	}
+	
+	#longer_flex_item{
+		height : 400px;
+	}
+	
+	.school_heading{
+		font-size : 1.5rem;
+		font-weight : 600;
+	}
+	
+	.role_heading{
+		font-size : 1.25rem;
+		font-weight : 600;
+	}
+	.role_list{
+		list-style-type : none;
+        padding-left : 0;		
+	}	
+	
+/******************************FOURTH SECTION******************************/
+
+    .fourth_section{
+		width : 100%;
+		min-height : auto;
+		min-height : auto;
+		background-color : #eff6ff;
+		padding : 4rem 0 4rem 0;
+		color : #00244C;
+	}	
+	
+	
+    .fourth_section_content{
+		width : 90%;
+		margin : 0 auto 0 auto;
+		font-size : 1.15rem;
+	}
+	
+	.fourth_section_content>p{
+		text-align : justify;
+	}	
+
+	.fourth_section_heading{
+		font-weight : 600;
+		font-size : 2rem;
+		font-family : calibre,helvetica,arial,sans-serif;
+        padding : 0 0 15px 0;
+        text-align : center;		
+	}
+
+    .fourth_section_flex{
+        display : flex;
+		flex-direction : row;
+		gap : 50px;
+		justify-content : center;
+		text-align : center;
+		margin : 50px 0 0 0;
+	}
+
+    .data_heading{
+        font-weight : 600;
+	}	
+	
+	
+/**************************************************END**************************************************/
+}	
